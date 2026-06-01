@@ -1,6 +1,7 @@
 def add_task(tasks, task):
     tasks.append(task)
     print("할 일이 추가되었습니다.")
+    /할 일 추가/
 
 def view_tasks(tasks):
     if not tasks:
@@ -10,6 +11,7 @@ def view_tasks(tasks):
     print("\n[할 일 목록]")
     for i, task in enumerate(tasks, start=1):
         print(f"{i}. {task}")
+    /할 일 목록 출력/
 
 def delete_task(tasks, index):
     if 1 <= index <= len(tasks):
